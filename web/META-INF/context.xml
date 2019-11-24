@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/">
+
+    <Resource url="jdbc:mysql://localhost:3306/dut?useSSL=false&amp;autoReconnect=true"
+              driverClassName="com.mysql.jdbc.Driver"
+              password="santiweide" username="root" maxWait="10000" maxIdle="30" maxActive="100" type="javax.sql.DataSource" auth="Container" name="jdbc/dut"/>
+
+</Context>
