@@ -20,12 +20,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
   <body>
     <div class="container">
-		<form name="uploadForm" method="POST" enctype="MULTIPART/FORM-DATA" action="upload.do">
-	     <h2 class="form-signin-heading">User::Navigator</h2>
-	  
-        <a class="btn btn-lg btn-primary btn-block" href="query.jsp" role="button">点我模糊查询</a>
-	  	<a class="btn btn-lg btn-primary btn-block" href="login.html" role="button">返回登陆界面</a>
-     
+
+      <form name="queryForm" method="GET" action="dispatcher">
+        <h2 class="form-signin-heading">SSDUT finds U!</h2>
+        	<label for="inputData" class="sr-only">Input Data</label>
+       		<input type="text" id="inputData" name="query" class="form-control" placeholder="tel/QQ/email/name/ID"  autofocus>
+
+	        <button class="btn btn-lg btn-primary btn-block" type="submit">Search</button>      		
+     <a class="btn btn-lg btn-primary btn-block" href="navigator.jsp" role="button">返回导航界面</a>
+      </form>
+	
+  	
 	</div> <!-- /container -->
 
 
